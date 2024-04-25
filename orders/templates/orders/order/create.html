@@ -8,18 +8,25 @@
             <h1>Checkout</h1>
             <form method="post">
                 {% csrf_token %}
-                {{ form.as_p }}
-                <p><input type="submit" value="Submit order"></p>
+                {% for field in form %}
+                    <div class="mb-3">
+                        {{ field.errors }}
+                        {{ field }}
+                    </div>
+                {% endfor %}
+                <p><input type="submit" value="Submit order" class="btn btn-warning"></p>
             </form>
         </div>
-        <div class="col-4">
+        <div class="col-4 mt-3 border border-1 rounded">
             <h3>Your order</h3>
-            <ul>
+            <ul class="list-group">
                 {% for item in cart %}
-                    <li>{{ item.quantity }} x {{ item.product.name }} | {{item.total_price }} ₴</li>
+                    <li class="list-group-item">
+                        {{ item.quantity }} x {{ item.product.name }} &ndash; {{item.total_price }} ₴
+                    </li>
                 {% endfor %}
             </ul>
-            <p>Total: {{ cart.get_total_price }} ₴</p>
+            <p class="mt-2 fw-bold">Total: {{ cart.get_total_price }} ₴</p>
         </div>
     </div>
 {% endblock content %}
