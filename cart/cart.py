@@ -13,7 +13,7 @@ class Cart:
         if not cart:
             cart = self.session[settings.CART_SESSION_ID] = {}
         self.cart = cart
-        self.coupon_id = request.session['coupon_id']
+        self.coupon_id = request.session.get('coupon_id')
         
     def add(self, product, quantity=1, override_quantity=False):
         product_id = str(product.id)
