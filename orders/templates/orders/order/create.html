@@ -26,7 +26,12 @@
                     </li>
                 {% endfor %}
             </ul>
-            <p class="mt-2 fw-bold">Total: {{ cart.get_total_price }} ₴</p>
+            {% if cart.coupon %}
+                <p class="mt-2">Total: {{ cart.get_total_price|floatformat:2 }} ₴</p>
+                <p>"{{ cart.coupon.code }}" coupon ({{ cart.coupon.discount }}% off)</p>
+                <p>-{{ cart.get_discount|floatformat:2 }} ₴</p>
+            {% endif %}
+            <p class="mt-2 fw-bold">Total: {{ cart.get_total_price_after_discount }} ₴</p>
         </div>
     </div>
 {% endblock content %}
