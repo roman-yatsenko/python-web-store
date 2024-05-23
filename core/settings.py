@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "account",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -131,5 +132,9 @@ MEDIA_ROOT = BASE_DIR
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+LOGIN_REDIRECT_URL = 'shop:product_list'
+LOGIN_URL = 'account:login'
+LOGOUT_URL = 'account:logout'
 
 CART_SESSION_ID = 'cart'
