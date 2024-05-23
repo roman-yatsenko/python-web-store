@@ -35,7 +35,7 @@
                     <button type="button" class="btn btn-warning disabled me-2">{{ request.user.first_name|default:request.user.username }}</button>
                     <a class="btn btn-outline-light me-2" href="{% url 'account:logout' %}">Logout</a>
                   {% else %}
-                    <button type="button" class="btn btn-warning me-2">Sign-up</button>
+                    <a class="btn btn-warning me-2" href="{% url 'account:register' %}">Sign-up</a>
                     <a class="btn btn-outline-light me-2" href="{% url 'account:login' %}">Login</a>
                   {% endif %}
                   <a class="btn btn-outline-light position-relative" href="{% url 'cart:cart_detail' %}">
