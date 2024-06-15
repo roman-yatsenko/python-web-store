@@ -6,8 +6,8 @@
 {% block content %}
     <h1>{% trans "Thank you" %}</h1>
     <p>
-        {% blocktrans %}
-        Your order has been successfully copleted. Your order number is <strong>{{ order.id }}</strong>.
+        {% blocktrans with id=order.id %}
+        Your order has been successfully completed. Your order number is <strong>{{ id }}</strong>.
         {% endblocktrans %}
     </p>
 {% endblock content %}
