@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-15 13:57+0300\n"
+"POT-Creation-Date: 2024-06-15 14:22+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,6 +162,22 @@ msgstr ""
 msgid "Checkout"
 msgstr ""
 
+#: .\core\urls.py:25
+msgid "account/"
+msgstr ""
+
+#: .\core\urls.py:27
+msgid "cart/"
+msgstr ""
+
+#: .\core\urls.py:28
+msgid "orders/"
+msgstr ""
+
+#: .\core\urls.py:29
+msgid "coupons/"
+msgstr ""
+
 #: .\coupons\forms.py:6
 msgid "Apply a coupon:"
 msgstr ""
@@ -223,6 +239,10 @@ msgid ""
 "        Your order has been successfully completed. Your order number is "
 "<strong>%(id)s</strong>.\n"
 "        "
+msgstr ""
+
+#: .\orders\urls.py:9
+msgid "create"
 msgstr ""
 
 #: .\shop\models.py:16
