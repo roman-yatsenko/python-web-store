@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "shop",
     "orders",
     "coupons",
+    "rosetta",
 ]
 
 MIDDLEWARE = [

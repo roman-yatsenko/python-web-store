@@ -26,6 +26,7 @@ urlpatterns = [
     path('orders/', include('orders.urls', namespace='orders')),
     path('coupons/', include('coupons.urls', namespace='coupons')),
     path('i18n/', include('django.conf.urls.i18n')),
+    path('translate/', include('rosetta.urls')),
     path('', include('shop.urls', namespace='shop')),
 ]
 

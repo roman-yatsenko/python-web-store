@@ -2,24 +2,179 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-08 14:09+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-06-15 13:41+0300\n"
+"PO-Revision-Date: 2024-06-15 13:42+0300\n"
+"Last-Translator: Roman Yatsenko <admin@fake.mail>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\account\templates\account\register.html:4
+#: .\account\templates\account\register.html:7
+msgid "Create an account"
+msgstr "Створити акаунт"
+
+#: .\account\templates\account\register.html:8
+msgid "Please, sign up using the following form:"
+msgstr "Будь ласка, заповніть форму нижче:"
+
+#: .\account\templates\account\register.html:12
+msgid "Register"
+msgstr "Реєстрація"
+
+#: .\account\templates\account\register_done.html:4
+#: .\account\templates\account\register_done.html:7
+msgid "Welcome"
+msgstr "Ласкаво просимо!"
+
+#: .\account\templates\account\register_done.html:9
+msgid "Your account has been successfully created."
+msgstr "Ваш акаунт було успішно створено."
+
+#: .\account\templates\account\register_done.html:10
+msgid "Now you can"
+msgstr "Тепер Ви можете"
+
+#: .\account\templates\account\register_done.html:10
+msgid "log in"
+msgstr "увійти"
+
+#: .\account\templates\registration\logged_out.html:4
+#: .\account\templates\registration\logged_out.html:7
+msgid "Logged out"
+msgstr "Ви вийшли з акаунту"
+
+#: .\account\templates\registration\logged_out.html:9
+msgid "You have been successfully logged out."
+msgstr "Ві успішно вийшли з акаунту."
+
+#: .\account\templates\registration\logged_out.html:10
+msgid "You can"
+msgstr "Ви можете"
+
+#: .\account\templates\registration\logged_out.html:10
+#: .\account\templates\registration\login.html:26
+msgid "Log in"
+msgstr "Вхід"
+
+#: .\account\templates\registration\logged_out.html:10
+msgid "again"
+msgstr "знов"
+
+#: .\account\templates\registration\login.html:4
+#: .\account\templates\registration\login.html:7
+msgid "Log In"
+msgstr "Вхід"
+
+#: .\account\templates\registration\login.html:10
+msgid "Your username and password didn't match."
+msgstr "Ваші ім'я користувача та пароль не розпізнані."
+
+#: .\account\templates\registration\login.html:11
+msgid "Please try again."
+msgstr "Будь ласка, спробуйте знов."
+
+#: .\account\templates\registration\login.html:15
+msgid ""
+"\n"
+"    Please, use the following form to log in.\n"
+"    If you don't have an account\n"
+"    "
+msgstr ""
+"\n"
+"Будь ласка, використовуйте форму нижче для входу.\n"
+"Якщо Ви не маєте акаунту"
+
+#: .\account\templates\registration\login.html:19
+msgid "register here"
+msgstr "зареєструйтесь тут"
+
+#: .\cart\forms.py:7
+#| msgid "Quantity"
+msgid "Quantity:"
+msgstr "Кількість:"
+
+#: .\cart\templates\cart\detail.html:6 .\cart\templates\cart\detail.html:10
+msgid "Your shopping cart"
+msgstr "Ваш кошик"
+
+#: .\cart\templates\cart\detail.html:14
+msgid "Image"
+msgstr "Зображення"
+
+#: .\cart\templates\cart\detail.html:15
+msgid "Product"
+msgstr "Товар"
+
+#: .\cart\templates\cart\detail.html:16
+msgid "Quantity"
+msgstr "Кількість"
+
+#: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:43
+msgid "Remove"
+msgstr "Видалити"
+
+#: .\cart\templates\cart\detail.html:18
+msgid "Unit price"
+msgstr "Ціна за од."
+
+#: .\cart\templates\cart\detail.html:19
+msgid "Price"
+msgstr "Ціна"
+
+#: .\cart\templates\cart\detail.html:38
+msgid "Update"
+msgstr "Оновити"
+
+#: .\cart\templates\cart\detail.html:55
+msgid "Subtotal"
+msgstr "Проміжний підсумок"
+
+#: .\cart\templates\cart\detail.html:61
+#, python-format
+msgid ""
+"\n"
+"                        \"%(cart.coupon.code)s\" coupon (%(cart.coupon.discount)s%% off)\n"
+"                        "
+msgstr ""
+"\n"
+"\"%(cart.coupon.code)s\" купон(%(cart.coupon.discount)s%% знижка)"
+
+#: .\cart\templates\cart\detail.html:70
+msgid "Total"
+msgstr "Разом"
+
+#: .\cart\templates\cart\detail.html:81
+msgid "Apply"
+msgstr "Застосувати"
+
+#: .\cart\templates\cart\detail.html:84
+msgid "Continue shopping"
+msgstr "Продовжити покупки"
+
+#: .\cart\templates\cart\detail.html:85
+#: .\orders\templates\orders\order\create.html:4
+#: .\orders\templates\orders\order\create.html:9
+msgid "Checkout"
+msgstr "Замовлення"
+
+#: .\coupons\forms.py:6
+msgid "Apply a coupon:"
+msgstr "Використати купон:"
+
+#: .\coupons\models.py:13
+msgid "Percentage value (0 to 100)"
+msgstr "Значення у відсотках (від 0 до 100)"
 
 #: .\orders\forms.py:12
 msgid "First Name"
@@ -37,6 +192,111 @@ msgstr "Адреса"
 msgid "City"
 msgstr "Місто"
 
-#: .\orders\templates\orders\order\create.html:9
-msgid "Checkout"
-msgstr "Замовлення"
+#: .\orders\models.py:38
+msgid "Order %(id)"
+msgstr "Замовлення №%(id)"
+
+#: .\orders\templates\orders\order\create.html:18
+msgid "Submit order"
+msgstr "Підтвердити"
+
+#: .\orders\templates\orders\order\create.html:22
+msgid "Your order"
+msgstr "Ваше замовлення"
+
+#: .\orders\templates\orders\order\create.html:31
+#: .\orders\templates\orders\order\create.html:35
+msgid "Total:"
+msgstr "Разом:"
+
+#: .\orders\templates\orders\order\create.html:32
+msgid "coupon"
+msgstr "купон"
+
+#: .\orders\templates\orders\order\create.html:32
+msgid "off"
+msgstr "знижка"
+
+#: .\orders\templates\orders\order\created.html:4
+#: .\orders\templates\orders\order\created.html:7
+msgid "Thank you"
+msgstr "Дякуємо!"
+
+#: .\orders\templates\orders\order\created.html:9
+#, python-format
+msgid ""
+"\n"
+"        Your order has been successfully copleted. Your order number is <strong>%(order.id)s</strong>.\n"
+"        "
+msgstr ""
+"\n"
+"Ваше замовлення було успішно оформлено. Номер замовлення <strong>№%(order.id)s</strong>."
+
+#: .\shop\models.py:16
+msgid "category"
+msgstr "категорія"
+
+#: .\shop\models.py:17
+msgid "categories"
+msgstr "категорії"
+
+#: .\shop\models.py:44
+msgid "product"
+msgstr "товар"
+
+#: .\shop\models.py:45
+msgid "products"
+msgstr "товари"
+
+#: .\shop\templates\shop\base.html:23 .\shop\templates\shop\base.html:92
+msgid "Home"
+msgstr "Головна"
+
+#: .\shop\templates\shop\base.html:24 .\shop\templates\shop\base.html:93
+msgid "Features"
+msgstr "Опис"
+
+#: .\shop\templates\shop\base.html:25 .\shop\templates\shop\base.html:94
+msgid "Pricing"
+msgstr "Ціни"
+
+#: .\shop\templates\shop\base.html:26 .\shop\templates\shop\base.html:95
+msgid "FAQs"
+msgstr "Часті питання"
+
+#: .\shop\templates\shop\base.html:27 .\shop\templates\shop\base.html:96
+msgid "About"
+msgstr "Про нас"
+
+#: .\shop\templates\shop\base.html:37
+msgid "Logout"
+msgstr "Вийти"
+
+#: .\shop\templates\shop\base.html:39
+msgid "Sign-up"
+msgstr "Реєстрація"
+
+#: .\shop\templates\shop\base.html:40
+msgid "Login"
+msgstr "Вхід"
+
+#: .\shop\templates\shop\product\detail.html:20
+msgid "Add to cart"
+msgstr "Додати до кошика"
+
+#: .\shop\templates\shop\product\list.html:6
+#: .\shop\templates\shop\product\list.html:29
+msgid "Products"
+msgstr "Товари"
+
+#: .\shop\templates\shop\product\list.html:12
+msgid "Categories"
+msgstr "Категорії"
+
+#: .\shop\templates\shop\product\list.html:16
+msgid "All"
+msgstr "Всі категорії"
+
+#: .\shop\templates\shop\product\list.html:40
+msgid "Open"
+msgstr "Відкрити"

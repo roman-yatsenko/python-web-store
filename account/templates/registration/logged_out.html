@@ -7,8 +7,6 @@
 <h2>{% trans "Logged out" %}</h2>
 <p>
     {% trans "You have been successfully logged out." %}
-    {% blocktrans %}
-    You can <a href="{% url 'account:login' %}">Log in</a> again.
-    {% endblocktrans %}
+    {% trans "You can" %} <a href="{% url 'account:login' %}">{% trans "Log in" %}</a> {% trans "again" %}.
 </p>
 {% endblock  %}

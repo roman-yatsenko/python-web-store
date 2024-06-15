@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-08 14:09+0300\n"
+"POT-Creation-Date: 2024-06-15 13:41+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,158 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\account\templates\account\register.html:4
+#: .\account\templates\account\register.html:7
+msgid "Create an account"
+msgstr ""
+
+#: .\account\templates\account\register.html:8
+msgid "Please, sign up using the following form:"
+msgstr ""
+
+#: .\account\templates\account\register.html:12
+msgid "Register"
+msgstr ""
+
+#: .\account\templates\account\register_done.html:4
+#: .\account\templates\account\register_done.html:7
+msgid "Welcome"
+msgstr ""
+
+#: .\account\templates\account\register_done.html:9
+msgid "Your account has been successfully created."
+msgstr ""
+
+#: .\account\templates\account\register_done.html:10
+msgid "Now you can"
+msgstr ""
+
+#: .\account\templates\account\register_done.html:10
+msgid "log in"
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:4
+#: .\account\templates\registration\logged_out.html:7
+msgid "Logged out"
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:9
+msgid "You have been successfully logged out."
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:10
+msgid "You can"
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:10
+#: .\account\templates\registration\login.html:26
+msgid "Log in"
+msgstr ""
+
+#: .\account\templates\registration\logged_out.html:10
+msgid "again"
+msgstr ""
+
+#: .\account\templates\registration\login.html:4
+#: .\account\templates\registration\login.html:7
+msgid "Log In"
+msgstr ""
+
+#: .\account\templates\registration\login.html:10
+msgid "Your username and password didn't match."
+msgstr ""
+
+#: .\account\templates\registration\login.html:11
+msgid "Please try again."
+msgstr ""
+
+#: .\account\templates\registration\login.html:15
+msgid ""
+"\n"
+"    Please, use the following form to log in.\n"
+"    If you don't have an account\n"
+"    "
+msgstr ""
+
+#: .\account\templates\registration\login.html:19
+msgid "register here"
+msgstr ""
+
+#: .\cart\forms.py:7
+msgid "Quantity:"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:6 .\cart\templates\cart\detail.html:10
+msgid "Your shopping cart"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:14
+msgid "Image"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:15
+msgid "Product"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:16
+msgid "Quantity"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:43
+msgid "Remove"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:18
+msgid "Unit price"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:19
+msgid "Price"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:38
+msgid "Update"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:55
+msgid "Subtotal"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:61
+#, python-format
+msgid ""
+"\n"
+"                        \"%(cart.coupon.code)s\" coupon "
+"(%(cart.coupon.discount)s%% off)\n"
+"                        "
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:70
+msgid "Total"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:81
+msgid "Apply"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:84
+msgid "Continue shopping"
+msgstr ""
+
+#: .\cart\templates\cart\detail.html:85
+#: .\orders\templates\orders\order\create.html:4
+#: .\orders\templates\orders\order\create.html:9
+msgid "Checkout"
+msgstr ""
+
+#: .\coupons\forms.py:6
+msgid "Apply a coupon:"
+msgstr ""
+
+#: .\coupons\models.py:13
+msgid "Percentage value (0 to 100)"
+msgstr ""
 
 #: .\orders\forms.py:12
 msgid "First Name"
@@ -34,6 +186,110 @@ msgstr ""
 msgid "City"
 msgstr ""
 
-#: .\orders\templates\orders\order\create.html:9
-msgid "Checkout"
+#: .\orders\models.py:38
+msgid "Order %(id)"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:18
+msgid "Submit order"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:22
+msgid "Your order"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:31
+#: .\orders\templates\orders\order\create.html:35
+msgid "Total:"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:32
+msgid "coupon"
+msgstr ""
+
+#: .\orders\templates\orders\order\create.html:32
+msgid "off"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:4
+#: .\orders\templates\orders\order\created.html:7
+msgid "Thank you"
+msgstr ""
+
+#: .\orders\templates\orders\order\created.html:9
+#, python-format
+msgid ""
+"\n"
+"        Your order has been successfully copleted. Your order number is "
+"<strong>%(order.id)s</strong>.\n"
+"        "
+msgstr ""
+
+#: .\shop\models.py:16
+msgid "category"
+msgstr ""
+
+#: .\shop\models.py:17
+msgid "categories"
+msgstr ""
+
+#: .\shop\models.py:44
+msgid "product"
+msgstr ""
+
+#: .\shop\models.py:45
+msgid "products"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:23 .\shop\templates\shop\base.html:92
+msgid "Home"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:24 .\shop\templates\shop\base.html:93
+msgid "Features"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:25 .\shop\templates\shop\base.html:94
+msgid "Pricing"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:26 .\shop\templates\shop\base.html:95
+msgid "FAQs"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:27 .\shop\templates\shop\base.html:96
+msgid "About"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:37
+msgid "Logout"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:39
+msgid "Sign-up"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:40
+msgid "Login"
+msgstr ""
+
+#: .\shop\templates\shop\product\detail.html:20
+msgid "Add to cart"
+msgstr ""
+
+#: .\shop\templates\shop\product\list.html:6
+#: .\shop\templates\shop\product\list.html:29
+msgid "Products"
+msgstr ""
+
+#: .\shop\templates\shop\product\list.html:12
+msgid "Categories"
+msgstr ""
+
+#: .\shop\templates\shop\product\list.html:16
+msgid "All"
+msgstr ""
+
+#: .\shop\templates\shop\product\list.html:40
+msgid "Open"
 msgstr ""

@@ -7,8 +7,6 @@
 <h2>{% trans "Welcome" %} {{ new_user.first_name}}!</h2>
 <p>
     {% trans "Your account has been successfully created." %}
-    {% blocktrans %}
-    Now you can <a href="{% url 'account:login' %}">log in</a>.
-    {% endblocktrans %}
+    {% trans "Now you can" %} <a href="{% url 'account:login' %}">{% trans "log in" %}</a>.
 </p>
 {% endblock  %}
