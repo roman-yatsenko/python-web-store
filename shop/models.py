@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.utils.translation import gettext as _
 
 # Create your models here.
 
@@ -12,8 +13,8 @@ class Category(models.Model):
         indexes = [
             models.Index(fields=['name']),
         ]
-        verbose_name = 'category'
-        verbose_name_plural = 'categories'
+        verbose_name = _('category')
+        verbose_name_plural = _('categories')
         
     def __str__(self):
         return self.name
@@ -40,6 +41,8 @@ class Product(models.Model):
             models.Index(fields=['name']),
             models.Index(fields=['-created']),
         ]
+        verbose_name = _('product')
+        verbose_name_plural = _('products')
         
     def __str__(self):
         return self.name
