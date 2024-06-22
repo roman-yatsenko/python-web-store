@@ -1,6 +1,7 @@
 {% extends "shop/base.html" %}
 {% load static %}
 {% load i18n %}
+{% load l10n %}
 
 {% block title %}{{ product.name }}{% endblock  %}
 
@@ -13,7 +14,7 @@
     </div>
     <div class="col-6">
         {{ product.description|linebreaks }}
-        <p>{{ product.price }} ₴</p>
+        <p>{{ product.price|localize }} ₴</p>
         <form action="{% url 'cart:cart_add' product.id %}" method="post">
             {% csrf_token %}
             {{ cart_product_form }}

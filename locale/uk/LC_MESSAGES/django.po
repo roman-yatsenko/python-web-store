@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-15 14:22+0300\n"
-"PO-Revision-Date: 2024-06-15 14:24+0300\n"
+"POT-Creation-Date: 2024-06-22 13:08+0300\n"
+"PO-Revision-Date: 2024-06-22 13:10+0300\n"
 "Last-Translator: Roman Yatsenko <admin@fake.mail>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -167,10 +167,6 @@ msgstr "Продовжити покупки"
 msgid "Checkout"
 msgstr "Замовлення"
 
-#: .\core\urls.py:25
-msgid "account/"
-msgstr "профіль/"
-
 #: .\core\urls.py:27
 msgid "cart/"
 msgstr "кошик/"
@@ -178,12 +174,6 @@ msgstr "кошик/"
 #: .\core\urls.py:28
 msgid "orders/"
 msgstr "замовлення/"
-
-#: .\core\urls.py:29
-#, fuzzy
-#| msgid "coupon"
-msgid "coupons/"
-msgstr "купон"
 
 #: .\coupons\forms.py:6
 msgid "Apply a coupon:"
@@ -234,38 +224,44 @@ msgstr "купон"
 msgid "off"
 msgstr "знижка"
 
-#: .\orders\templates\orders\order\created.html:4
-#: .\orders\templates\orders\order\created.html:7
+#: .\orders\templates\orders\order\created.html:5
+#: .\orders\templates\orders\order\created.html:8
 msgid "Thank you"
 msgstr "Дякуємо!"
 
-#: .\orders\templates\orders\order\created.html:9
+#: .\orders\templates\orders\order\created.html:10
 #, python-format
+#| msgid ""
+#| "\n"
+#| "        Your order has been successfully completed. Your order number is <strong>%(id)s</strong>.\n"
+#| "        "
 msgid ""
 "\n"
 "        Your order has been successfully completed. Your order number is <strong>%(id)s</strong>.\n"
+"        (%(order_date|localize)s)\n"
 "        "
 msgstr ""
 "\n"
-"Ваше замовлення було успішно оформлено. Номер замовлення <strong>№%(id)s</strong>."
+"Ваше замовлення було успішно оформлено. Номер замовлення <strong>№%(id)s</strong>.\n"
+"(%(order_date|localize)s)"
 
 #: .\orders\urls.py:9
 msgid "create"
 msgstr "нове"
 
-#: .\shop\models.py:16
+#: .\shop\models.py:19
 msgid "category"
 msgstr "категорія"
 
-#: .\shop\models.py:17
+#: .\shop\models.py:20
 msgid "categories"
 msgstr "категорії"
 
-#: .\shop\models.py:44
+#: .\shop\models.py:49
 msgid "product"
 msgstr "товар"
 
-#: .\shop\models.py:45
+#: .\shop\models.py:50
 msgid "products"
 msgstr "товари"
 
@@ -301,7 +297,7 @@ msgstr "Реєстрація"
 msgid "Login"
 msgstr "Вхід"
 
-#: .\shop\templates\shop\product\detail.html:20
+#: .\shop\templates\shop\product\detail.html:21
 msgid "Add to cart"
 msgstr "Додати до кошика"
 
@@ -321,3 +317,10 @@ msgstr "Всі категорії"
 #: .\shop\templates\shop\product\list.html:40
 msgid "Open"
 msgstr "Відкрити"
+
+#~ msgid "account/"
+#~ msgstr "профіль/"
+
+#, fuzzy
+#~ msgid "coupons/"
+#~ msgstr "купон"

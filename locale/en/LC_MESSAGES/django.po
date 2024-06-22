@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-15 14:22+0300\n"
+"POT-Creation-Date: 2024-06-22 13:08+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,20 +162,12 @@ msgstr ""
 msgid "Checkout"
 msgstr ""
 
-#: .\core\urls.py:25
-msgid "account/"
-msgstr ""
-
 #: .\core\urls.py:27
 msgid "cart/"
 msgstr ""
 
 #: .\core\urls.py:28
 msgid "orders/"
-msgstr ""
-
-#: .\core\urls.py:29
-msgid "coupons/"
 msgstr ""
 
 #: .\coupons\forms.py:6
@@ -227,17 +219,18 @@ msgstr ""
 msgid "off"
 msgstr ""
 
-#: .\orders\templates\orders\order\created.html:4
-#: .\orders\templates\orders\order\created.html:7
+#: .\orders\templates\orders\order\created.html:5
+#: .\orders\templates\orders\order\created.html:8
 msgid "Thank you"
 msgstr ""
 
-#: .\orders\templates\orders\order\created.html:9
+#: .\orders\templates\orders\order\created.html:10
 #, python-format
 msgid ""
 "\n"
 "        Your order has been successfully completed. Your order number is "
 "<strong>%(id)s</strong>.\n"
+"        (%(order_date|localize)s)\n"
 "        "
 msgstr ""
 
@@ -245,19 +238,19 @@ msgstr ""
 msgid "create"
 msgstr ""
 
-#: .\shop\models.py:16
+#: .\shop\models.py:19
 msgid "category"
 msgstr ""
 
-#: .\shop\models.py:17
+#: .\shop\models.py:20
 msgid "categories"
 msgstr ""
 
-#: .\shop\models.py:44
+#: .\shop\models.py:49
 msgid "product"
 msgstr ""
 
-#: .\shop\models.py:45
+#: .\shop\models.py:50
 msgid "products"
 msgstr ""
 
@@ -293,7 +286,7 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
-#: .\shop\templates\shop\product\detail.html:20
+#: .\shop\templates\shop\product\detail.html:21
 msgid "Add to cart"
 msgstr ""
 
